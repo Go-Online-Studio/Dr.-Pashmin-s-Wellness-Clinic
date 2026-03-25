@@ -1,0 +1,64 @@
+{
+  "categories": [
+    { "name": "Weight Management", "subcategories": ["Programs", "Treatments"] },
+    { "name": "Skin Treatments", "subcategories": ["Acne", "Anti-Aging", "Laser"] },
+    { "name": "Hair Restoration", "subcategories": ["Regrowth", "Therapies"] },
+    { "name": "Ayurvedic Therapies", "subcategories": ["Detox", "Pain Management"] }
+  ],
+  "services": [
+    {
+      "id": "sustainable-weight-loss",
+      "name": "Customized Sustainable Weight Loss Plans",
+      "category": "Weight Management",
+      "subcategory": "Programs",
+      "description": "Unlike crash diets, our plans focus on metabolic correction, hormonal balance (PCOS, thyroid), and lifestyle modification.",
+      "images": ["https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"],
+      "tags": ["PCOS", "Metabolic Reset", "Nutrition"]
+    },
+    {
+      "id": "cryolipolysis",
+      "name": "Cryolipolysis (Fat Freezing)",
+      "category": "Weight Management",
+      "subcategory": "Treatments",
+      "description": "Non-surgical inch loss using advanced fat-freezing technology to permanently destroy fat cells in stubborn areas.",
+      "images": ["https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80"],
+      "tags": ["Inch Loss", "Non-Surgical", "Body Contouring"]
+    },
+    {
+      "id": "acne-scar-treatment",
+      "name": "Acne & Acne Scar Treatment",
+      "category": "Skin Treatments",
+      "subcategory": "Acne",
+      "description": "Root-cause analysis with customized medication, scar revision therapies, and pigmentation correction.",
+      "images": ["https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=800&q=80"],
+      "tags": ["Acne", "Scar Revision", "Dermatology"]
+    },
+    {
+      "id": "carbon-laser-facial",
+      "name": "Carbon Laser Facial",
+      "category": "Skin Treatments",
+      "subcategory": "Laser",
+      "description": "A deep-cleansing laser procedure that reduces pigmentation, minimizes pores, and provides an instant glow.",
+      "images": ["https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80"],
+      "tags": ["Laser", "Glow", "Pigmentation"]
+    },
+    {
+      "id": "prp-therapy",
+      "name": "PRP Therapy (Platelet-Rich Plasma)",
+      "category": "Hair Restoration",
+      "subcategory": "Regrowth",
+      "description": "A regenerative treatment stimulating dormant hair follicles to improve thickness and promote natural regrowth.",
+      "images": ["https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=800&q=80"],
+      "tags": ["Hair Regrowth", "PRP", "Scalp Health"]
+    },
+    {
+      "id": "cupping-therapy",
+      "name": "Cupping Therapy",
+      "category": "Ayurvedic Therapies",
+      "subcategory": "Detox",
+      "description": "Traditional therapy for PCOS management, stress relief, detoxification, and improving blood circulation.",
+      "images": ["https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80"],
+      "tags": ["Detox", "Circulation", "PCOS"]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Dr. Pashmin's Wellness Clinic</title>
+  <meta name="description" content="Book a consultation at Dr. Pashmin's Wellness Clinic in Vadodara. Contact us for personalized weight loss, skin, and hair treatments.">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .contact-header {
+      padding: 100px 0 60px;
+      background-color: var(--light);
+      margin-top: var(--nav-height);
+      text-align: center;
+    }
+    .contact-info-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: rgba(43, 147, 140, 0.1);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 350px;
+      border-radius: 8px;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="mainNavbar" class="fixed-top"></header>
+
+  <main>
+    <section class="contact-header">
+      <div class="container" data-aos="fade-up">
+        <span class="category-tag">Get in Touch</span>
+        <h1 class="mt-2">Contact & Location</h1>
+        <p class="text-muted mx-auto mt-3" style="max-width: 600px;">Have a question or ready to start your wellness journey? Reach out to us, and our medical team will be happy to assist you.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row gy-5">
+          
+          <div class="col-lg-5 pe-lg-5" data-aos="fade-right">
+            <h3 class="mb-4">Clinic Details</h3>
+            
+            <div class="contact-info-box">
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <div class="contact-icon flex-shrink-0"><iconify-icon icon="mdi:map-marker"></iconify-icon></div>
+                <div>
+                  <h5 class="mb-1">Visit Us</h5>
+                  <p class="text-muted mb-0">Earth Artica, 22/ GF, Vasna Bhayli Link Rd, Ashwamegh Nagar, Tandalja, Vadodara, Gujarat 390007</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <div class="contact-icon flex-shrink-0"><iconify-icon icon="mdi:phone"></iconify-icon></div>
+                <div>
+                  <h5 class="mb-1">Call Us</h5>
+                  <p class="text-muted mb-0"><a href="tel:08347345777" class="text-muted text-decoration-none">+91 083473 45777</a></p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3">
+                <div class="contact-icon flex-shrink-0"><iconify-icon icon="mdi:clock-outline"></iconify-icon></div>
+                <div>
+                  <h5 class="mb-1">Opening Hours</h5>
+                  <p class="text-muted mb-0">Mon - Sat: 10:00 AM - 8:00 PM<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-container shadow-sm">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.8890784269926!2d73.1384!3d22.2821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc80000000000%3A0x0000000000000000!2sEarth%20Artica!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="form-container">
+              <h3 class="mb-2">Book a Consultation</h3>
+              <p class="text-muted mb-4">Fill out the form below, and our team will get back to you shortly to confirm your appointment.</p>
+              
+              <form action="#" method="POST">
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-medium text-secondary">Full Name</label>
+                    <input type="text" class="form-control px-0" placeholder="John Doe" required>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-medium text-secondary">Phone Number</label>
+                    <input type="tel" class="form-control px-0" placeholder="+91 98765 43210" required>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-medium text-secondary">Email Address</label>
+                    <input type="email" class="form-control px-0" placeholder="john@example.com">
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <label class="form-label fw-medium text-secondary">Preferred Date</label>
+                    <input type="date" class="form-control px-0" required>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label class="form-label fw-medium text-secondary">Primary Concern</label>
+                    <select class="form-select border-0 border-bottom rounded-0 px-0 shadow-none" required>
+                      <option value="" disabled selected>Select a Treatment Area</option>
+                      <option value="weight">Weight Loss & Body Contouring</option>
+                      <option value="skin">Skin Treatments & Anti-Aging</option>
+                      <option value="hair">Hair Restoration & PRP</option>
+                      <option value="ayurveda">Ayurvedic Detox & Therapy</option>
+                      <option value="other">General Consultation</option>
+                    </select>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <label class="form-label fw-medium text-secondary">Additional Message (Optional)</label>
+                    <textarea class="form-control px-0" rows="3" placeholder="Briefly describe your concern..."></textarea>
+                  </div>
+                  <div class="col-12 mt-2">
+                    <button type="submit" class="btn btn-primary btn-lg w-100 justify-content-center">Request Appointment</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/critical.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

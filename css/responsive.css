@@ -1,0 +1,137 @@
+/* ========================================
+   RESPONSIVE.CSS - Media Queries
+   ======================================== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  .hero-swiper {
+    height: 70vh;
+    min-height: 500px;
+  }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991px) {
+  .section-padding {
+    padding: 60px 0; /* Reduce padding on tablets */
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  /* Split Form Section Adjustment */
+  .split-bg .col-lg-5 {
+    padding: 30px 15px;
+  }
+
+  /* About Section Images */
+  .floating-card {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .img-relative img {
+    height: auto !important;
+  }
+
+  /* Footer */
+  .footer-col {
+    margin-top: 30px;
+  }
+}
+
+/* Small Devices (Phones, less than 768px) */
+@media (max-width: 767px) {
+  .section-padding {
+    padding: 40px 0; /* Tighten padding for mobile */
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-overlay {
+    /* Change gradient direction on mobile so text is legible */
+    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.2) 100%);
+  }
+
+  /* Stats Section */
+  .stat-number {
+    font-size: 2.2rem;
+  }
+  
+  .stat-text {
+    font-size: 0.8rem;
+  }
+
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+  }
+  
+  .cta-section img {
+    margin: 30px auto 0;
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .form-container {
+    padding: 25px;
+  }
+
+  /* Adjust floating buttons size for mobile */
+  .fab-btn {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .fab-call {
+    font-size: 1.2rem;
+  }
+  
+  #backToTop {
+    width: 40px;
+    height: 40px;
+    bottom: 80px;
+  }
+}
+
+/* Extra Small Devices (Smaller Phones, less than 576px) */
+@media (max-width: 575px) {
+  .hero-swiper {
+    height: 60vh;
+    min-height: 450px;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: 100%; /* Full width buttons on very small screens */
+    justify-content: center;
+  }
+
+  /* Ensure grids stack neatly */
+  .service-item img {
+    height: 200px;
+  }
+}
