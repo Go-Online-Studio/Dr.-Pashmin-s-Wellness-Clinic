@@ -347,25 +347,30 @@
             <span style="color: var(--primary); font-weight: 600; text-transform: uppercase; font-size: 0.8rem;">Take the first step</span>
             <h3 class="mb-4 mt-2">Book a Consultation</h3>
             <p class="text-muted mb-4">Let our medical experts design a personalized treatment plan for your body type and goals.</p>
-            <form>
+            <form id="homePageForm" class="needs-validation" novalidate>
               <div class="row">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Your Name" required>
+                <div class="col-md-6 mb-3">
+                  <input type="text" id="hp_name" class="form-control" placeholder="Your Name" required>
+                  <div class="invalid-feedback">Please enter your name.</div>
                 </div>
-                <div class="col-md-6">
-                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                <div class="col-md-6 mb-3">
+                  <input type="tel" id="hp_phone" class="form-control" placeholder="Phone Number" required>
+                  <div class="invalid-feedback">Please enter your phone number.</div>
                 </div>
-                <div class="col-12">
-                  <select class="form-control text-muted" required>
+                <div class="col-12 mb-3">
+                  <select id="hp_concern" class="form-control text-muted" required>
                     <option value="" disabled selected>Select Primary Concern</option>
-                    <option>Weight Loss / Contouring</option>
-                    <option>Skin Issues / Anti-Aging</option>
-                    <option>Hair Fall / Thinning</option>
-                    <option>PCOS / Detox / Pain Management</option>
+                    <option value="Weight Loss / Contouring">Weight Loss / Contouring</option>
+                    <option value="Skin Issues / Anti-Aging">Skin Issues / Anti-Aging</option>
+                    <option value="Hair Fall / Thinning">Hair Fall / Thinning</option>
+                    <option value="PCOS / Detox / Pain Management">PCOS / Detox / Pain Management</option>
                   </select>
+                  <div class="invalid-feedback">Please select a primary concern.</div>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary w-100 mt-3">Request Appointment</button>
+              <button type="submit" class="btn btn-primary w-100 mt-2 d-flex gap-2 justify-content-center align-items-center">
+                Request Appointment <iconify-icon icon="mdi:whatsapp" width="20"></iconify-icon>
+              </button>
             </form>
           </div>
         </div>
@@ -443,8 +448,12 @@
   <script src="js/script.js"></script>
   
   <script>
+
+
     document.addEventListener("DOMContentLoaded", () => {
-      // Initialize AOS Animations
+    // ... Existing AOS and Swiper logic ...
+
+    // Initialize AOS Animations
       AOS.init({ once: true, duration: 800, offset: 50 });
 
       // Hero Swiper (SM_Enterprise style)
@@ -466,9 +475,71 @@
     }
 
 
-      // Set current year in footer
-      document.getElementById('year').textContent = new Date().getFullYear();
-    });
+    let isMobile = false;
+
+    function debounce(func, wait) {
+        let timeout;
+        return function(...args) {
+            const context = this;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+
+    function checkMobileStatus() {
+        const userAgentMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const widthMobile = window.innerWidth <= 768;
+        isMobile = userAgentMobile || widthMobile;
+    }
+
+    checkMobileStatus();
+    window.addEventListener("resize", debounce(checkMobileStatus, 250));
+
+    const homeForm = document.getElementById("homePageForm");
+    
+    if (homeForm) {
+        homeForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Bootstrap Validation check
+            if (!homeForm.checkValidity()) {
+                e.stopPropagation();
+                homeForm.classList.add('was-validated');
+                return;
+            }
+
+            // Gather field values
+            const name = document.getElementById("hp_name").value.trim();
+            const phone = document.getElementById("hp_phone").value.trim();
+            const concern = document.getElementById("hp_concern").value;
+
+            // Format WhatsApp Message
+            const whatsappMsg = `Hello Dr. Pashmin's Wellness Clinic,%0a%0aI would like to book a consultation.%0a%0a*My Details:*%0aName: ${name}%0aPhone: ${phone}%0aPrimary Concern: ${concern}`;
+            
+            // Clinic target number
+            const targetNumber = "918347345777";
+            let url = isMobile 
+                ? `https://wa.me/${targetNumber}?text=${whatsappMsg}` 
+                : `https://web.whatsapp.com/send?phone=${targetNumber}&text=${whatsappMsg}`;
+
+            // Open WhatsApp
+            window.open(url, '_blank');
+
+            // Reset form and validation state
+            homeForm.reset();
+            homeForm.classList.remove('was-validated');
+            
+            // Re-apply text-muted color for the select placeholder
+            document.getElementById("hp_concern").classList.add("text-muted");
+        });
+
+        // Small UX fix: Remove "text-muted" from select when an option is chosen
+        const concernSelect = document.getElementById("hp_concern");
+        concernSelect.addEventListener("change", function() {
+            this.classList.remove("text-muted");
+        });
+    }
+});
   </script>
 </body>
 </html>
