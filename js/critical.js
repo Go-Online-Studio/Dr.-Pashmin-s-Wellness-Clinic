@@ -4,11 +4,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
-  const CLINIC_INFO = {
-    phone: "08347345777",
-    email: "info@drpashminwellness.com"
-  };
-
   // 1. Inject Topbar & Navbar
   const headerEl = document.getElementById("mainNavbar");
   if (headerEl) {
@@ -16,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="topbar d-none d-md-block">
         <div class="container d-flex justify-content-between">
           <div>
-            <a href="tel:${CLINIC_INFO.phone}"><iconify-icon icon="mdi:phone"></iconify-icon> +91 ${CLINIC_INFO.phone}</a>
-            <a href="mailto:${CLINIC_INFO.email}"><iconify-icon icon="mdi:email"></iconify-icon> ${CLINIC_INFO.email}</a>
+            <a href="tel:+918347345777"><iconify-icon icon="mdi:phone"></iconify-icon> +91 83473 45777</a>
+            <a href="mailto:info@drpashminwellness.com"><iconify-icon icon="mdi:email"></iconify-icon> info@drpashminwellness.com</a>
           </div>
           <div>
             <a href="#"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
@@ -29,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            Dr. Pashmin's<span>.</span>
+            <img src="images/DrPashmin_s_WellnessClinicLogo.webp" alt="Dr. Pashmin's Wellness Clinic">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>

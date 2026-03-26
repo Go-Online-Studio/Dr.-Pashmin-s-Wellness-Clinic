@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="col-lg-4 col-md-6">
             <h4 class="mb-4" style="color: var(--secondary); font-weight: 700;">Dr. Pashmin's<span style="color: var(--primary);">.</span></h4>
             <p class="text-muted pe-md-4">A holistic wellness and aesthetic center dedicated to delivering medically supervised, result-oriented treatments.</p>
-            <div class="d-flex gap-3 mt-4">
+            <div class="d-flex gap-3 mt-4 socialLinks">
               <a href="#" class="text-secondary fs-5"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
               <a href="#" class="text-secondary fs-5"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
             </div>
@@ -48,16 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
           <div class="col-lg-3 col-md-6 footer-col">
             <h5>Contact Info</h5>
-            <ul class="footer-links">
+            <ul class="footer-links contInfo">
               <li class="d-flex align-items-start gap-2 text-muted">
-                <iconify-icon icon="mdi:map-marker" class="text-primary mt-1"></iconify-icon>
+                <a class="locationLink" target="_blank" href="https://maps.app.goo.gl/ZkmAzXqSYsJa7pDb8">
+                  <iconify-icon icon="mdi:map-marker" class="text-primary mt-1"></iconify-icon>
                 Earth Artica, 22/ GF, Vasna Bhayli Link Rd, Ashwamegh Nagar, Tandalja, Vadodara, Gujarat 390007
+                </a>
               </li>
               <li class="d-flex align-items-center gap-2 text-muted mt-3">
-                <iconify-icon icon="mdi:phone" class="text-primary"></iconify-icon> 083473 45777
+                <a href="tel:+918347345777">
+                  <iconify-icon icon="mdi:phone" class="text-primary"></iconify-icon> +91 83473 45777
+                </a> 
               </li>
               <li class="d-flex align-items-center gap-2 text-muted mt-2">
-                <iconify-icon icon="mdi:web" class="text-primary"></iconify-icon> drpashminwellnessclinic.com
+                <a href="mailto:https://drpashminwellnessclinic.com">
+                  <iconify-icon icon="mdi:web" class="text-primary"></iconify-icon> drpashminwellnessclinic.com
+                </a>
               </li>
             </ul>
           </div>
@@ -68,6 +74,28 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
   }
+
+  // WhatsApp URL Adjuster (Device-based Detection)
+(function () {
+  const mobileLink = `https://api.whatsapp.com/send?phone=${CONFIG.whatsappNumber}`;
+  const desktopLink = `https://web.whatsapp.com/send?phone=${CONFIG.whatsappNumber}`;
+
+  function isMobileDevice() {
+    return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
+  function updateWhatsAppLink() {
+    const isMobile = isMobileDevice();
+    const targetLink = isMobile ? mobileLink : desktopLink;
+
+    document.querySelectorAll(".set-url-target").forEach(el => {
+      el.setAttribute("href", targetLink);
+    });
+  }
+
+  window.addEventListener("resize", updateWhatsAppLink);
+  window.addEventListener("load", updateWhatsAppLink);
+})();
 
   // ===== DYNAMIC YEAR =====
   const yearEl = document.getElementById("year");

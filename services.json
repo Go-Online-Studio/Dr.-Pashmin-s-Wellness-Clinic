@@ -11,8 +11,8 @@
       "name": "Customized Sustainable Weight Loss Plans",
       "category": "Weight Management",
       "subcategory": "Programs",
-      "description": "Unlike crash diets, our plans focus on metabolic correction, hormonal balance (PCOS, thyroid), and lifestyle modification.",
-      "images": ["https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80"],
+      "description": "At Dr. Pashmin’s Wellness Clinic, we provide non-surgical, medically supervised weight loss solutions targeting stubborn fat and metabolic issues. Unlike crash diets, our customized plans focus on metabolic correction and hormonal balance—essential for those with PCOS or thyroid-related weight gain. Every program includes nutrition guidance and continuous monitoring tailored to your unique medical history for sustainable, long-term results.",
+      "images": ["https://img.freepik.com/free-photo/expressive-young-woman-posing-studio_176474-78064.jpg?t=st=1774503884~exp=1774507484~hmac=a1aaa45557f092a7e69e35d2d709f9ed47bbfd8c179344ea32754e463da57466&w=800"],
       "tags": ["PCOS", "Metabolic Reset", "Nutrition"]
     },
     {
@@ -20,8 +20,8 @@
       "name": "Cryolipolysis (Fat Freezing)",
       "category": "Weight Management",
       "subcategory": "Treatments",
-      "description": "Non-surgical inch loss using advanced fat-freezing technology to permanently destroy fat cells in stubborn areas.",
-      "images": ["https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80"],
+      "description": "Our Cryolipolysis treatment is a premier non-surgical inch loss solution using advanced fat-freezing technology. It specifically targets stubborn areas like the abdomen, thighs, and love handles by permanently destroying fat cells without invasive surgery. With zero downtime, it is the ideal choice for men and women seeking targeted body contouring that diet and exercise alone cannot achieve.",
+      "images": ["https://img.freepik.com/premium-photo/professional-dermatologist-performing-radio-frequency-lifting-procedure-stomach-woman_690432-3458.jpg"],
       "tags": ["Inch Loss", "Non-Surgical", "Body Contouring"]
     },
     {
@@ -29,8 +29,8 @@
       "name": "Acne & Acne Scar Treatment",
       "category": "Skin Treatments",
       "subcategory": "Acne",
-      "description": "Root-cause analysis with customized medication, scar revision therapies, and pigmentation correction.",
-      "images": ["https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?w=800&q=80"],
+      "description": "We offer customized dermatological treatments focused on achieving healthy, radiant skin. Our approach begins with a root-cause analysis of hormonal and gut-related triggers. We combine tailored medication with advanced scar revision therapies to minimize blemishes, control oil, and correct pigmentation. Our goal is to provide a smoother, more even complexion through professional medical supervision.",
+      "images": ["images/FaceTreatment.webp"],
       "tags": ["Acne", "Scar Revision", "Dermatology"]
     },
     {
@@ -38,8 +38,8 @@
       "name": "Carbon Laser Facial",
       "category": "Skin Treatments",
       "subcategory": "Laser",
-      "description": "A deep-cleansing laser procedure that reduces pigmentation, minimizes pores, and provides an instant glow.",
-      "images": ["https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80"],
+      "description": "The Carbon Laser Facial is a deep-cleansing procedure that revitalizes the complexion by reducing pigmentation and controlling excess oil. It is highly beneficial for acne-prone or dull skin, as the laser minimizes pores and improves skin texture. Clients enjoy an instant, radiant glow post-session, backed by modern aesthetic technology for long-lasting rejuvenation.",
+      "images": ["https://img.freepik.com/free-photo/person-getting-micro-needling-beauty-treatment_23-2149334261.jpg?t=st=1774503996~exp=1774507596~hmac=0419da1b08a48568d061c95dab6e9424148b849a6a93f220cd3ec7c0a16f6fab&w=800"],
       "tags": ["Laser", "Glow", "Pigmentation"]
     },
     {
@@ -47,8 +47,8 @@
       "name": "PRP Therapy (Platelet-Rich Plasma)",
       "category": "Hair Restoration",
       "subcategory": "Regrowth",
-      "description": "A regenerative treatment stimulating dormant hair follicles to improve thickness and promote natural regrowth.",
-      "images": ["https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=800&q=80"],
+      "description": "Our PRP Therapy is an innovative regenerative procedure for hair restoration. By utilizing your body's own resources, we stimulate dormant follicles to return to the active growth phase. This results in significantly improved hair thickness and reduced hair fall. Every treatment plan is personalized to address the root cause of hair loss, ensuring natural and sustainable hair regrowth.",
+      "images": ["https://img.freepik.com/free-photo/side-view-woman-getting-prp-treatment_23-2149404689.jpg?t=st=1774504291~exp=1774507891~hmac=acfac892b33ccfb16728fefd5df63b997f9de8ca22de286ec82c696680f12349&w=800"],
       "tags": ["Hair Regrowth", "PRP", "Scalp Health"]
     },
     {
@@ -56,8 +56,8 @@
       "name": "Cupping Therapy",
       "category": "Ayurvedic Therapies",
       "subcategory": "Detox",
-      "description": "Traditional therapy for PCOS management, stress relief, detoxification, and improving blood circulation.",
-      "images": ["https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80"],
+      "description": "We integrate traditional Cupping Therapy to promote holistic wellness. This therapeutic Ayurvedic service is effective for PCOS management, infertility support, and chronic pain relief in the neck and shoulders. It facilitates deep detoxification, improves blood circulation, and reduces inflammation, focusing on long-term relief by addressing the root cause of physical discomfort.",
+      "images": ["https://img.freepik.com/free-photo/close-up-cupping-therapy-experience_23-2148882157.jpg?t=st=1774504423~exp=1774508023~hmac=95c4c3c634d6eda7a0b58e61015c63059bc2a9268eb71f46c5eccd3550f2169c&w=800"],
       "tags": ["Detox", "Circulation", "PCOS"]
     }
   ]

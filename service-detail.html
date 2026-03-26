@@ -4,11 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Service Details | Dr. Pashmin's Wellness Clinic</title>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="icon" href="images/DrPashminFevicon.png" type="image/png" fetchpriority="low">
+  <link rel="preload"  as="image"  href="images/DrPashmin_s_WellnessClinicLogo.webp"  fetchpriority="high">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload"
+      as="style"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload"
+      as="style"
+      href="css/style.css"
+      onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload"
+      as="style"
+      href="css/responsive.css"
+      onload="this.onload=null;this.rel='stylesheet'">
+      
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="css/style.css">
 
   <style>
     .service-detail-img {
@@ -32,9 +47,9 @@
   </style>
 </head>
 <body>
-  <header id="mainNavbar" class="fixed-top"></header>
+  <header class="mainNavContainer"><div id="mainNavbar"></div></header>
 
-  <main style="padding-top: calc(var(--nav-height) + 60px); min-height: 80vh;">
+  <main style="padding: 60px 0; min-height: 80vh;">
     <div class="container px-4 px-md-5">
       
       <nav aria-label="breadcrumb" class="mb-5" data-aos="fade-in">
@@ -61,7 +76,7 @@
             Please wait while we load the treatment details.
           </div>
 
-          <div class="d-flex flex-wrap gap-3 pt-3 border-top">
+          <div class="d-flex flex-wrap gap-3 pt-3 border-top align-items-center">
             <button id="whatsappEnquiryBtn" class="btn btn-primary btn-lg">
               <iconify-icon icon="mdi:whatsapp" class="fs-4"></iconify-icon> Consult via WhatsApp
             </button>
@@ -75,11 +90,15 @@
     </div>
   </main>
 
-  <footer id="footer" class="mt-5"></footer>
+  <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top"><iconify-icon icon="mdi:chevron-up"></iconify-icon></a>
 
+  <footer class="footer" id="footer">
+  </footer>
+
+  <script src="js/critical.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/critical.js"></script>
   <script src="js/script.js"></script>
 
 

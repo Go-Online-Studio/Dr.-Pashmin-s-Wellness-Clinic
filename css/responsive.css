@@ -4,10 +4,10 @@
 
 /* Large Devices (Desktops, less than 1200px) */
 @media (max-width: 1199px) {
-  .hero-swiper {
+  /* .hero-swiper {
     height: 70vh;
     min-height: 500px;
-  }
+  } */
 }
 
 /* Medium Devices (Tablets, less than 992px) */
@@ -43,8 +43,10 @@
     bottom: 0;
     left: 0;
     max-width: 100%;
-    margin-top: 20px;
+    margin-top: -34px;
+    padding: 14px;
   }
+
   
   .img-relative img {
     height: auto !important;
@@ -58,19 +60,18 @@
 
 /* Small Devices (Phones, less than 768px) */
 @media (max-width: 767px) {
+  :root{
+    --nav-height: calc(16px + var(--brandHeight));
+  }
   .section-padding {
     padding: 40px 0; /* Tighten padding for mobile */
   }
 
   .hero-content {
     text-align: center;
+    padding: 20px 16px;
+    background: linear-gradient(90deg, #ffffff7a, #ffffff7a);
   }
-  
-  .hero-overlay {
-    /* Change gradient direction on mobile so text is legible */
-    background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 60%, rgba(255,255,255,0.2) 100%);
-  }
-
   /* Stats Section */
   .stat-number {
     font-size: 2.2rem;
@@ -110,15 +111,28 @@
     height: 40px;
     bottom: 80px;
   }
+  .footer{
+    text-align: center;
+  }
+  .socialLinks{
+    justify-content: center;
+  }
+  .footer-links a{
+    display: inline-block;
+    width: 100%;
+    max-width: 292px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* Extra Small Devices (Smaller Phones, less than 576px) */
+
 @media (max-width: 575px) {
-  .hero-swiper {
+  /* .hero-swiper {
     height: 60vh;
     min-height: 450px;
-  }
-
+  } */
   .section-title h2 {
     font-size: 1.8rem;
   }
@@ -134,4 +148,19 @@
   .service-item img {
     height: 200px;
   }
+  .contact-info-box {
+    padding: 12px;
+}
+.form-container {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 439px) {
+  .HeroSlide1{
+  background: url('../images/BannerMob1.webp') center/cover no-repeat !important;
+} 
+  .HeroSlide2{
+  background: url('../images/BannerMob3.webp') center/cover no-repeat !important;
+} 
 }
